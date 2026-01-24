@@ -1,9 +1,6 @@
-#![cfg(test)]
-use crate::base::errors::Error;
-use crate::base::types::AutoShareDetails;
 use crate::{AutoShareContract, AutoShareContractClient};
 use soroban_sdk::{
-    testutils::{Address as _, Events},
+    testutils::{Address as _,},
     Address, BytesN, Env, String,
 };
 
