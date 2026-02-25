@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/Navbar";
+import DashboardWalletGuard from "@/components/DashboardWalletGuard";
 
 export default function DashboardLayout({
   children,
@@ -19,7 +20,7 @@ export default function DashboardLayout({
       />
       <Navbar />
       <div className="min-h-screen pt-24 sm:pt-28 lg:pt-32 pb-8 sm:pb-12 px-3 sm:px-4 lg:px-8 max-w-5xl mx-auto relative z-10 w-full overflow-x-hidden">
-        {children}
+        <DashboardWalletGuard>{children}</DashboardWalletGuard>
       </div>
     </>
   );
